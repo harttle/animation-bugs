@@ -1,6 +1,4 @@
-# CSS Animation Related Bugs
-
-## Fixed
+## Transformed Became Container for the Fixed
 
 The transformed container becomes the container of the fixed-position element. The fixed-position element scrolls along with the container.
 
