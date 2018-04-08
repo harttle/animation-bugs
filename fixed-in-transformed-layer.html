@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <style>
+html, body {
+  margin: 0;
+  padding: 0;
+  background: black;
+}
+.fixed {
+  position: fixed;
+}
+#outer {
+  background: yellow;
+  position: relative;
+  top: 30px;
+  height: 300px;
+  overflow-y: auto;
+}
+#inner {
+  color: white;
+  background: blue;
+  top: 60px;
+  left: 60px;
+  right: 60px;
+  bottom: 60px;
+}
+#toggle-translate0 {
+  float :right;
+}
+.translate0 {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+.translate0::before {
+  content: 'translate3d(0,0,0)';
+}
+  </style>
+</head>
+<body>
+  <div class="" id="outer">
+    <button id="toggle-translate0">Toggle</button>
+    Outer &lt;div&gt;
+    <p>1</p>
+    <p>2</p>
+    <p>3</p>
+    <p>4</p>
+    <p>5</p>
+    <p>6</p>
+    <p>7</p>
+    <p>8</p>
+    <p>9</p>
+    <p>10</p>
+    <div class="fixed" id="inner">
+      Fixed: top/left: 60px
+    </div>
+  </div>
+  <script>
+var inner = document.querySelector('#inner')
+var outer = document.querySelector('#outer')
+document.querySelector('#toggle-translate0').addEventListener('click', function () {
+  var cls =  /translate0/.test(outer.getAttribute('class')) ? '' : 'translate0'
+  outer.setAttribute('class', cls)
+})
+  </script>
+</body>
+</html>
