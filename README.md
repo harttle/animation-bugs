@@ -22,4 +22,4 @@ In iOS UIWebview, any transition/animation/JavasCripts will freeze on touch.
 
 * Platform: iOS UIWebview
 * Demo: http://harttle.github.io/animation-bugs/a-normal-animation.html
-* Video: [a-normal-animation.mp4](https://harttle.land/animation-bugs/a-normal-animation.mp4)
+* Video: [a-normal-animation.mp4](https://harttle.land/animation-bugs/a-normal-animation-uiwebview.mp4)
